@@ -15,7 +15,7 @@ const CheckAllUsers = () => {
 
   const authenticateAdmin = async () => {
     try {
-      const response = await fetch("http://3.111.150.118/api/user/users", {
+      const response = await fetch("http://3.111.150.118:3000/api/user/users", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -39,7 +39,7 @@ const CheckAllUsers = () => {
       setLoading(true);
       const token = localStorage.getItem("token");
 
-      const response = await fetch("http://3.111.150.118/api/admin/users", {
+      const response = await fetch("http://3.111.150.118:3000/api/admin/users", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
