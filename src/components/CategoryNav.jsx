@@ -7,7 +7,7 @@ const CategoryNav = () => {
   const [loading, setLoading] = useState(true);
 
   const API_BASE_URL =
-    import.meta.env.VITE_API_BASE_URL || "http://3.111.150.118/api";
+    import.meta.env.VITE_API_BASE_URL || "http://3.111.150.118:3000/api";
 
   useEffect(() => {
     fetchCategories();
